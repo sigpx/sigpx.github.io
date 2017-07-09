@@ -1,0 +1,157 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+}
+abbr {
+	border: dotted #666;
+	border-width: 0 0 1px 0;
+	text-decoration: none !important;
+}
+p {
+	margin: 16px 0;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 1em 0;
+}
+table th {
+	font-weight: normal;
+}
+table th b {
+	color: rgb(108, 141, 161);
+}
+table th,
+table td {
+	padding: 4px 5px;
+}
+table th {
+	text-align: left;
+}
+table tr.title {
+	background-color: #fff !important;
+}
+table tr.title th {
+	font-weight: bold;
+}
+table tr.title th,
+table tr.title td {
+	background: rgba(108, 141, 161, 0.2);
+	border: 1px solid rgb(108, 141, 161);
+	border-width: 1px 0 !important;
+}
+table tr:nth-child(odd) {
+	background-color: #f6f6f6;
+}
+table tr:last-child th,
+table tr:last-child td {
+	border: 1px solid rgb(108, 141, 161);
+	border-width: 0 0 1px 0;
+}
+table tr td.affiliation {
+	width: 40%
+}
+#wrapper .detail {
+	font-size: 96%;
+	line-height: 1.7em;
+}
+.note {
+	background: rgba(108, 141, 161, 0.2);
+	padding: 10px;
+	border: 1px solid rgb(108, 141, 161);
+	border-radius: 5px;
+}
+.english {
+	color: #aaa;
+	font-size: small;
+}
+.share {
+	text-align: right;
+}
+nav .share {
+	float: right;
+}
+.share>.twitter-share-button {
+	font-size: small;
+}
+.share>iframe, .share>.fb-share-button>span {
+	vertical-align: top !important;
+}
+.register,
+.details {
+	text-align: center;
+}
+.register a,
+.details a {
+	display: inline-block;
+	padding: 20px 40px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+}
+.register a {
+	background: #193;
+	border: 1px solid #600;
+}
+.details a {
+	background: rgb(108, 141, 161);
+	border: 1px solid rgb(108, 141, 161);
+}
+.register a:hover,
+.details a:hover {
+	opacity: 0.8;
+	border-color: #000;
+}
+#wrapper {
+	max-width: 1024px;
+	margin: auto;
+	padding: 20px;
+	line-height: 1.9em;
+}
+#wrapper>section>pre {
+	background: #eee;
+	padding: 10px;
+	overflow-x: auto;
+	line-height: 1.4em;
+	border-radius: 5px;
+}
+#wrapper>section>h1 {
+	font-weight: normal;
+	font-size: 2em;
+}
+#wrapper>section>h1>img {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: bottom;
+	height: 1em;
+}
+#wrapper>section>h2 {
+	padding: 5px 0;
+	border: solid #000;
+	border-width: 1px 0 0 0;
+}
+#wrapper span.gray {
+	color: #aaa;
+}
+#wrapper span.label {
+	background-color: #a00;
+	color: #fff;
+	display: inline-block;
+	border: 0 solid #a00;
+	border-radius: 3px;
+	margin-left: 5px;
+	padding: 0 5px;
+}
+#wrapper>footer>h4 {
+	margin-bottom: 0;
+}
+#wrapper>footer>p {
+	margin-top: 0;
+}
+#wrapper hr {
+	border: dotted #000;
+	border-width: 1px 0 0 0;
+	background: none;
+}
