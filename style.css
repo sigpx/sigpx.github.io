@@ -9,8 +9,34 @@ abbr {
 	border-width: 0 0 1px 0;
 	text-decoration: none !important;
 }
-p {
+p, blockquote {
 	margin: 16px 0;
+}
+blockquote {
+	background: #eee;
+	padding: 5px 15px;
+	position: relative;
+	z-index: 0;
+}
+blockquote::before {
+	z-index: 1;
+	content: '“';
+	font-size: 72px;
+	line-height: 1em;
+	color: #ccc;
+	position: absolute;
+	left: 0;
+	top: -12px;
+}
+blockquote::after {
+	z-index: 1;
+	content: '”';
+	font-size: 72px;
+	line-height: 0em;
+	color: #ccc;
+	position: absolute;
+	right: 0;
+	bottom: -2px;
 }
 table {
 	border-collapse: collapse;
@@ -70,8 +96,16 @@ table tr td.affiliation {
 .share {
 	text-align: right;
 }
-nav .share {
+nav .share, .pull-right {
 	float: right;
+}
+p.pull-right {
+	margin: 1em;
+	position: relative;
+	z-index: 2;
+}
+p.pull-right * {
+	z-index: 3;
 }
 .share>.twitter-share-button {
 	font-size: small;
@@ -96,8 +130,12 @@ nav .share {
 	border: 1px solid #600;
 }
 .details a {
-	background: rgb(108, 141, 161);
-	border: 1px solid rgb(108, 141, 161);
+	background: #6c8da1;
+	border: 1px solid #6c8da1;
+}
+.details a.blue {
+	background: #0091c5;
+	border: 1px solid #004158;	
 }
 .register a:hover,
 .details a:hover {
