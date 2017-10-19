@@ -179,7 +179,7 @@ p.pull-right * {
 #wrapper .gray {
 	color: #aaa;
 }
-#wrapper span.label {
+span.label {
 	background-color: #a00;
 	color: #fff;
 	display: inline-block;
@@ -187,6 +187,7 @@ p.pull-right * {
 	border-radius: 3px;
 	margin-left: 5px;
 	padding: 0 5px;
+	font-weight: bold;
 }
 #wrapper>footer>h4,
 #wrapper>footer>ul,
