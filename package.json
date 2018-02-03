@@ -1,0 +1,18 @@
+{
+  "name": "sigpx.github.io",
+  "version": "1.0.0",
+  "description": "SIGPX website",
+  "scripts": {
+    "start": "browser-sync start --server --files='.'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sigpx/sigpx.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sigpx/sigpx.github.io/issues"
+  },
+  "homepage": "https://github.com/sigpx/sigpx.github.io#readme"
+}
