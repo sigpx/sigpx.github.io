@@ -137,6 +137,10 @@ p.pull-right * {
   background: #0091c5;
   border: 1px solid #004158;  
 }
+.details a.red {
+  background: #a00;
+  border: 1px solid #900;
+}
 .register a:hover,
 .details a:hover {
   opacity: 0.8;
