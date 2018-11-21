@@ -120,10 +120,17 @@ p.pull-right * {
 .register a,
 .details a {
   display: inline-block;
+  margin-bottom: .2em;
+  margin-right: .2em;
   padding: 20px 40px;
   color: #fff;
   text-decoration: none;
   font-size: 2em;
+}
+.register a:last-child,
+.details a:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
 }
 .register a {
   background: #193;
@@ -172,6 +179,9 @@ p.pull-right * {
   float: left;
 }
 @media(max-width: 640px) {
+  span.long {
+    display: none;
+  }
   #wrapper>section>h1 {
     margin-top: 0;
   }
