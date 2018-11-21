@@ -162,13 +162,27 @@ p.pull-right * {
 #wrapper>section>h1 {
   font-weight: normal;
   font-size: 2em;
+  padding-top: .5em;
+  min-height: 2em;
 }
 #wrapper>section>h1>img {
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: bottom;
-  height: 1em;
+  display: block;
+  margin: -.5em .5em .5em 0;
+  height: 2em;
+  float: left;
 }
+@media(max-width: 640px) {
+  #wrapper>section>h1 {
+    margin-top: 0;
+  }
+  #wrapper>section>h1>img {
+    margin: 0 0 .5em 0;
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+}
+
 #wrapper>section>h2 {
   padding: 5px 0;
   border: solid #000;
