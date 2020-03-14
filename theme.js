@@ -10,6 +10,12 @@ export default {
     background: "#fff",
     primary: "#c00"
   },
+  images: {
+    avatar: {
+      width: 48,
+      height: 48
+    }
+  },
   styles: {
     h1: {
       fontSize: 32,
