@@ -1,15 +1,18 @@
 // theme ui
+import { swiss } from "@theme-ui/presets";
+
 export default {
+  ...swiss,
   fonts: {
     body: "system-ui, sans-serif",
     heading: '"Avenir Next", sans-serif',
     monospace: "Menlo, monospace"
   },
-  colors: {
-    text: "#000",
-    background: "#fff",
-    primary: "#c00"
-  },
+  // colors: {
+  //   text: "#000",
+  //   background: "#fff",
+  //   primary: "#c00"
+  // },
   images: {
     avatar: {
       width: 48,
