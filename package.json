@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "SIGPX website",
   "scripts": {
-    "start": "browser-sync start --server --files='.'"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -14,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/sigpx/sigpx.github.io/issues"
   },
-  "homepage": "https://github.com/sigpx/sigpx.github.io#readme"
+  "homepage": "https://github.com/sigpx/sigpx.github.io#readme",
+  "dependencies": {
+    "@mdx-js/loader": "^1.5.7",
+    "@next/mdx": "^9.3.0",
+    "next": "^9.3.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "theme-ui": "^0.3.1"
+  }
 }
