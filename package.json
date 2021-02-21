@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/sigpx/sigpx.github.io/issues"
   },
-  "homepage": "https://github.com/sigpx/sigpx.github.io#readme"
+  "homepage": "https://github.com/sigpx/sigpx.github.io#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.14"
+  }
 }
