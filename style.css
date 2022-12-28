@@ -244,3 +244,33 @@ span.label {
   border-width: 1px 0 0 0;
   background: none;
 }
+
+.row {
+  display: flex;
+}
+.row > .column {
+  width: 50%;
+  margin: 5px;
+}
+.row > .column:first-child {
+  margin-left: 0;
+}
+.row > .column:last-child {
+  margin-right: 0;
+}
+.row > .column > iframe {
+  aspect-ratio: 16 / 9;
+}
+
+@media(max-width: 640px) {
+  .row {
+    display: block;
+  }
+  .row > .column {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .row > .column:last-child {
+    margin-bottom: 0;
+  }
+}
