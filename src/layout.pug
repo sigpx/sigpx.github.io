@@ -27,6 +27,9 @@ mixin bodyForCFP(date, path)
     h2
       | Call for Participation 
       span.gray (#{date} 掲載)
+    - if (event?.callUrl) {
+    p.details: a.red(href=event.callUrl) 参加登録する&#9786;
+    - }
     pre!= call
   - }
 
