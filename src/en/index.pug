@@ -1,0 +1,23 @@
+extends ../layout
+
+block vars
+  - const title = 'SIGPX: Special Interest Group on Programming Experience';
+  - const path = 'en';
+
+block description
+  p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience.
+
+block body
+  include index.body.pug
+
+block members
+  h4 Founders
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | ,
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | ,
+      abbr(title='Tokyo Institute of Technology') Titech

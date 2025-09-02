@@ -1,0 +1,23 @@
+extends ../../layout
+
+block vars
+  - const title = 'PX Special Issue in IPSJ Journal';
+  - const path = 'en/ipsj2017';
+
+block description
+  p A special issue titled "Emerging Research on Programming Experience: From Language Design to Industrial Applications" collected seven articles that covered broad and latest topics in PX, not only in academia (programming language, software engineering, and human-computer interaction) but also in startup and maker cultures, written by established professionals in the field.
+
+block body
+  include index.body.pug
+
+block members
+  h4 Founders
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | ,
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | ,
+      abbr(title='Tokyo Institute of Technology') Titech
