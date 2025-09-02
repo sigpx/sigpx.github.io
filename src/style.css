@@ -96,6 +96,9 @@ table tr td.affiliation {
 .share {
   text-align: right;
 }
+.share > * {
+  margin-left: 3px;
+}
 nav .share, .pull-right {
   float: right;
 }
@@ -166,13 +169,13 @@ p.pull-right * {
   line-height: 1.4em;
   border-radius: 5px;
 }
-#wrapper>section>h1 {
+#wrapper>header>h1 {
   font-weight: normal;
   font-size: 2em;
   padding-top: .5em;
   min-height: 2em;
 }
-#wrapper>section>h1>img {
+#wrapper>header>h1>img {
   display: block;
   margin: -.5em .5em .5em 0;
   height: 2em;
@@ -182,10 +185,10 @@ p.pull-right * {
   span.long {
     display: none;
   }
-  #wrapper>section>h1 {
+  #wrapper>header>h1 {
     margin-top: 0;
   }
-  #wrapper>section>h1>img {
+  #wrapper>header>h1>img {
     margin: 0 0 .5em 0;
     width: 100%;
     height: auto;
