@@ -1,0 +1,179 @@
+extends ../../layout
+
+block vars
+  - const title = 'The First Workshop of SIGPX';
+  - const path = 'en/1';
+
+block description
+  <p>SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience. This page shows the overview of its first workshop.</p>
+
+block body
+  section#overview
+    h2 Overview
+    p 36 researchers, engineers, and evangelists dealing with programming languages, tools, integrated development environments attended the event, getting to know each other through long (15min) and short (1min) introduction of their work.
+    p
+      | The presentations took a broad range of topics and the discussions continue until the very end of the workshop. While discussions had already taken place in 
+      a(href="https://www.facebook.com/groups/sigpx") the Facebook group
+      | , we expanded it to 
+      a(href="https://sigpx.slack.com") the Slack team
+      | . Let 
+      a#apply-mail(href="") me
+      |  know if you are interested in participation, though the primary language is Japanese.
+    ul
+      li
+        strong Location:
+        |  Tokyo Institute of Technology (and remote participation using Google Hangouts)
+      li
+        strong Date:
+        |  2/27/2016 (Sat) 11:00-18:00
+      li
+        strong Topics:
+        |  "Domestic and international situation and information on SIGPX" and "case studies with self introductions"
+
+    h2 Timetable
+
+    table
+      tr.title
+        th(colspan="2")
+          b 11:00
+          |  Overview
+      tr
+        th
+          a(href="https://docs.com/junkato/5543/1sigpx-special-interest-group-on-programming") Why We Are Founding SIGPX - Trends in Academia
+        td.affiliation
+          a(href="https://junkato.jp") Jun Kato
+          |  (
+          abbr(title="National Institution of Advanced Industrial Science and Technology") AIST
+          | ), 
+          a(href="http://prg.is.titech.ac.jp/people/masuhara/") Hidehiko Masuhara
+          |  (Tokyo Institute of Technology)
+      tr
+        th SIGPX in Industry (Startups)
+        td.affiliation
+          a(href="https://medium.com/@tumada/") Umada Takaaki
+          |  (ex-Microsoft)
+
+    table
+      tr.title
+        th(colspan="2")
+          b 11:35
+          |  Measuring and Designing PX
+      tr
+        th How Immediate is Live Programming? Benchmarking Live Programming Environments
+        td.affiliation
+          a(href="http://www.hpi.uni-potsdam.de/hirschfeld/people/hirschfeld/") Robert Hirschfeld
+          |  (Hasso Plattner Institut)
+      tr
+        th Measuring Programming Abilities with Medical Monitors
+        td.affiliation
+          a(href="http://www.info.nara-k.ac.jp/~uwano/uwano.php") Hidetake Uwano
+          |  (National Institute of Technology, Nara College)
+      tr
+        th Motivate Programming Learners through "Smug" Experience
+        td.affiliation
+          a(href="http://miyashita.com") Homei Miyashita
+          |  (Meiji University)
+
+    table
+      tr.title
+        th(colspan="2")
+          b 12:30
+          |  Lunch
+
+    table
+      tr.title
+        th(colspan="2")
+          b 13:30
+          |  Programming Environments
+      tr
+        th To Use Unity, or to Write Code, that is the Question.
+        td.affiliation
+          a(href="https://twitter.com/yoh7686") Yohei Yanase
+          |  (Unity Technologies Japan)
+      tr
+        th Extension to the Viscuit Programming Environment
+        td.affiliation
+          | Yasunori Harada (
+          a(href="http://www.digitalpocket.org/") Digital Pocket
+          | )
+      tr
+        th Programming Home Appliances on the Web
+        td.affiliation
+          a(href="http://kadecot.net") Shigeru Owada
+          |  (Sony CSL)
+
+    table
+      tr.title
+        th(colspan="2")
+          b 14:15
+          |  Programming Tools
+      tr
+        th Shigure: Towards Modular Presentation Live Programming Environment
+        td.affiliation
+          a(href="http://pushl.net") Tomoki Imai
+          |  (Tokyo Institute of Technology)
+      tr
+        th An Advanced Source Code Reading Tool for Program Comprehension
+        td.affiliation Yu Ohmura (Tokyo Institute of Technology)
+      tr
+        th A Light-weight User Interface for Minimal Version Controls
+        td.affiliation
+          a(href="http://www-ui.is.s.u-tokyo.ac.jp/~mhiroaki/") Hiroaki Mikami
+          |  (The University of Tokyo)
+
+    table
+      tr.title
+        th(colspan="2")
+          b 15:00
+          |  Short Self Introductions (1 min each), Tea Break
+
+    table
+      tr.title
+        th(colspan="2")
+          b 15:45
+          |  Programming Applications
+      tr
+        th Programming the Entire World
+        td.affiliation
+          a(href="http://www.pitecan.com/") Toshiyuki Masui
+          |  (Keio University)
+      tr
+        th Thoughts on a Relationship between Authoring Interactive Art and Programming Environments
+        td.affiliation
+          a(href="http://www.pineapple.cc/") Ichiro Kanaya
+          |  (University of Nagasaki)
+      tr
+        th FORMULA -> CODE, TEXT: Lessons Learned from a 3D Library Implementation
+        td.affiliation
+          a(href="https://kwakita.wordpress.com/") Ken Wakita
+          |  (Tokyo Institute of Technology)
+      tr
+        th Software for Managing Lots of Servers - Infrastructure as Code
+        td.affiliation
+          a(href="http://yumulab.tumblr.com/") Tsubasa Yumura
+          |  (
+          abbr(title="National Institute of Information and Communications Technology") NICT
+          | )
+
+    table
+      tr.title
+        th(colspan="2")
+          b 16:45
+          |  Discussion
+
+    table
+      tr.title
+        th(colspan="2")
+          b 19:00
+          |  Drinking Party
+
+block members
+  h4 Founders
+  p
+    a#jk(href='https://junkato.jp') Jun Kato
+    | , 
+    abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+    |  and 
+    a(href='http://prg.is.titech.ac.jp/ja/people/masuhara/') Hidehiko Masuhara
+    | , 
+    abbr(title='Tokyo Institute of Technology') Titech
