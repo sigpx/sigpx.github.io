@@ -35,9 +35,12 @@ block body
       |  and 
       strong anybody interested in Programming Experience
       | .
-  section#events
-    each event in events
-      h2= event.title
+  #events
+  each event in events
+    section(id=event.id)
+      h2
+        != event.title
+        |  
         span.gray (#{event.date})
         if event.label
           != ' '

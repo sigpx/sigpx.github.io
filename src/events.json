@@ -1,9 +1,19 @@
 [
   {
+    "id": "eleventh-sigpx",
+    "title": "第11回",
+    "suffix": " 勉強会",
+    "label": "NEW!",
+    "details": [
+      { "label": "場所:", "content": "東京都内（詳細は近日中に追記; Slackで告知）" },
+      { "label": "日時:", "content": "2025年10月6日（月）午前11時～午後4時（予定）" }
+    ],
+    "link": { "href": "/11", "label": "第11回", "suffix": "の詳しい情報はこちら", "class": "" }
+  },
+  {
     "id": "tenth-sigpx",
     "title": "第10回",
     "suffix": " 勉強会",
-    "label": "NEW!",
     "details": [
       { "label": "場所:", "content": "オンライン開催（Zoom）" },
       { "label": "日時:", "content": "2022年12月22日（木）午後1時30分～午後4時" }

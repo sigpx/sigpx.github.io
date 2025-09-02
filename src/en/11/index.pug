@@ -1,0 +1,42 @@
+extends ../../layout
+
+block vars
+  - const title = 'The Eleventh Workshop of SIGPX';
+  - const path = 'en/11';
+  - const eventId = 'eleventh-sigpx';
+  - const event = JSON.parse(fs.readFileSync('src/en/events.json', 'utf8')).find(e => e.id === eventId);
+
+block description
+  p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience. This page shows the overview of its eleventh workshop.
+
+block body
+  section#overview
+    h2 Overview
+    ul
+      li
+        strong Official language:
+        |  #{event.details.find(d => d.label.toLowerCase().indexOf("language") >= 0).content}
+      li
+        strong Where:
+        |  #{event.details.find(d => d.label.indexOf("Where") >= 0).content}
+      li
+        strong When:
+        |  !{event.details.find(d => d.label.indexOf("When") >= 0).content}
+
+block members
+  h4 Organizers
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | , 
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+      | /
+      abbr(title='Arch Inc.') ARCH
+    li
+      a(href='https://hiroakimikami.github.io/') Hiroaki Mikami
+      | , 
+      abbr(title='Preferred Networks, Inc.') PFN
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | , 
+      abbr(title='Tokyo Institute of Technology') Titech

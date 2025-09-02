@@ -1,8 +1,20 @@
 [
   {
+    "id": "eleventh-sigpx",
+    "title": "The Eleventh Workshop",
+    "date": "10/6/2025",
+    "label": "NEW!",
+    "details": [
+      { "label": "Official language:", "content": "Japanese" },
+      { "label": "Where:", "content": "Tokyo (details TBA)" },
+      { "label": "When:", "content": "10/6/2025 11am- (<abbr title=\"Japan Standard Time\">JST</abbr>)" }
+    ],
+    "summary": "",
+    "link": "/en/11"
+  },
+  {
     "title": "The Tenth Workshop",
     "date": "12/22/2022",
-    "label": "NEW!",
     "details": [
       { "label": "Official language:", "content": "Japanese" },
       { "label": "Where:", "content": "Online (Zoom)" },
