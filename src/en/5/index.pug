@@ -1,0 +1,134 @@
+extends ../../layout
+
+block vars
+  - const title = 'The Fifth Workshop of SIGPX';
+  - const path = 'en/5';
+
+block description
+  p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience. This page shows the overview of its fifth workshop.
+
+block body
+  section#overview
+    h2 Overview
+    p Around 20 researchers including over half of students attended the event, introducing their latest research work. The attendees provided 15min or 10min presentations and received feedback through 3 minutes of discussions and Slack messages.
+    p
+      | We are using 
+      a(href='https://sigpx.slack.com') the Slack team
+      |  and Google Docs for fostering discussions during and even after the event. Let 
+      a#apply-mail(href) me
+      |  know if you are interested in participation, though the primary language is Japanese.
+    ul
+      li
+        strong Location:
+        |  The University of Tokyo (Hongo campus)
+      li
+        strong Date:
+        |  12/3/2018 (Mon) 14:00-18:00
+      li
+        strong Topics:
+        |  "International situation and information on SIGPX" and "recent research outcomes"
+      li
+        a(href='https://sigpx.slack.com/messages/sigpx5/') Slack channel #sigpx5
+    h2 Timetable
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 14:00
+            |  Session #0
+        tr
+          th Overview of SIGPX and Relevant International Activities
+          td.affiliation
+            a(href='https://junkato.jp') Jun Kato
+            |  (
+            abbr(title='National Institution of Advanced Industrial Science and Technology') AIST
+            | ), 
+            a(href='http://prg.is.titech.ac.jp/people/masuhara/') Hidehiko Masuhara
+            |  (Tokyo Institute of Technology)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 14:05
+            |  Session #1 Domain-Specific PX
+        tr
+          th A Programming System for Action Painting Style Programming
+          td.affiliation Terutoshi Sato (The University of Tokyo)
+        tr
+          th Programming Experience of Inputs for Existing Digital Games
+          td.affiliation Kazutaka Kurihara (Tsuda University)
+        tr
+          th Programming Time-series Media
+          td.affiliation Kai Aoki (sigboost)
+        tr
+          th Using Pipelines to Compose Complex Concurrent Algorithms on a REPL Interface
+          td.affiliation Jeanine Miller Adkisson (Tokyo Institute of Technology)
+        tr
+          th Induction via Recursion
+          td.affiliation Youyou Cong (Ochanomizu University)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 15:30
+            |  Session #2 Lightning Talks
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 15:45
+            |  Session #3 Coffee Break
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 16:00
+            |  Session #4 Machine Learning & Programming
+        tr
+          th Interactive Text Manipulation through Programming by Demonstration
+          td.affiliation Minoru Narita (The University of Tokyo)
+        tr
+          th Survey on Programming with Machine Learning
+          td.affiliation Hiroaki Mikami (Sony)
+        tr
+          th Deep Learning-based Code Completion
+          td.affiliation Li Dongfang	(Tokyo Institute of Technology)
+        tr
+          th Code Completion System with Keyword Programming
+          td.affiliation Shu Aochi	(Tokyo Institute of Technology)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 17:10
+            |  Session #5 Learnable Programming
+        tr
+          th Development of Augmented Reality-based Programming Environment for Novices
+          td.affiliation Keisuke Hattori (Komazawa University)
+        tr
+          th Proposal of an Abstract Thinking System to Support Learning Programming in a Class
+          td.affiliation Yasutsuna Matayoshi (Meiji University)
+        tr
+          th Supporting Recursive Functions in Live Data Structure Programming
+          td.affiliation Akio Oka (Tokyo Institute of Technology)
+        tr
+          th A Force-directed Visualization Algorithm for Complex Data Structures
+          td.affiliation Tomoki Ogushi (Tokyo Institute of Technology)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 18:20
+            |  Session #6 Townhall
+
+block members
+  h4 Founders
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | , 
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | , 
+      abbr(title='Tokyo Institute of Technology') Titech

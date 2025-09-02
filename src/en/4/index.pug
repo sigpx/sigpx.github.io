@@ -1,0 +1,160 @@
+extends ../../layout
+
+block vars
+  - const title = 'The Forth Workshop of SIGPX';
+  - const path = 'en/4';
+
+block description
+  p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience. This page shows the overview of its forth workshop.
+
+block body
+  section#overview
+    h2 Overview
+    p
+      | Around 20 researchers including about half of students attended the event, introducing their latest research work in a simplified version of 
+      a(href='//dreamsongs.com/Files/WritersWorkshopTypeset.pdf') the Writer's Workshop format
+      | . Some attendees provided 15min presentations followed by 5 or more minutes of critiques, reviews, and general discussions. Others provided short (3min or more) lightning talks.
+    p
+      | We are using 
+      a(href='https://sigpx.slack.com') the Slack team
+      |  and Google Docs for fostering discussions during and even after the event. Let 
+      a#apply-mail(href) me
+      |  know if you are interested in participation, though the primary language is Japanese.
+    ul
+      li
+        strong Location:
+        |  The University of Tokyo (Hongo campus)
+      li
+        strong Date:
+        |  3/2/2018 (Sun) 13:00-19:00
+      li
+        strong Topics:
+        |  "International situation and information on SIGPX" and "recent research outcomes"
+      li
+        a(href='https://sigpx.slack.com/messages/sigpx4/') Slack channel #sigpx4
+    h2 Timetable
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 11:00
+            |  Session #0
+        tr
+          th Overview of SIGPX and Relevant International Activities
+          td.affiliation
+            a(href='https://junkato.jp') Jun Kato
+            |  (
+            abbr(title='National Institution of Advanced Industrial Science and Technology') AIST
+            | ), 
+            a(href='http://prg.is.titech.ac.jp/people/masuhara/') Hidehiko Masuhara
+            |  (Tokyo Institute of Technology)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 13:10
+            |  Session #1 Social Coding (1)
+        tr
+          th Automatic Code Exam Generation using GitHub Pull Requests
+          td.affiliation
+            a(href='https://shiba.uno') Daisuke Shibato
+            | , Junpei Mishima, Koji Yatani (The University of Tokyo)
+        tr
+          th DiDA: A Dataset of Code Diffs and Development Activities on GitHub
+          td.affiliation Junpei Mishima, Daisuke Shibato, Koji Yatani (The University of Tokyo)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 14:15
+            |  Session #2 Live Programming
+        tr
+          th How Sexy Kanon is?
+          td.affiliation
+            a(href='http://a-oka.org') Akio Oka
+            | , Hidehiko Masuhara, Tomoyuki Aotani (Tokyo Institute of Technology)
+        tr
+          th User Interfaces for Live Programming (summary of the LIVE keynote)
+          td.affiliation
+            a(href='https://junkato.jp') Jun Kato
+            |  (
+            abbr(title='National Institution of Advanced Industrial Science and Technology') AIST
+            | )
+        tr
+          th Reactile: Programming Swarm User Interfaces through Direct Physical Manipulation
+          td.affiliation
+            a(href='http://ryosuzuki.org') Ryo Suzuki
+            | , Jun Kato, Mark D. Gross, Tom Yeh (UC Boulder, 
+            abbr(title='National Institution of Advanced Industrial Science and Technology') AIST
+            | )
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 15:10
+            |  Session #3 Lightning Talks
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 15:40
+            |  Session #4 Coffee Break
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 16:10
+            |  Session #5 Social Coding (2)
+        tr
+          th Code Examination Support Using GitHub Pull Requests
+          td.affiliation
+            a(href='https://shiba.uno/')
+            | Daisuke Shibato, Shota Miyazaki, Koji Yatani (The University of Tokyo)
+        tr
+          th Adding Visual Aids to Cursors for Enhancing Non-verbal Communication in Synchronous Collaboration Work
+          td.affiliation
+            a(href='http://www.0x0c.me') Akira Matsuda
+            | , Jun Kato, Masa Ogata, Masahiro Hamasaki, Masataka Goto, Jun Rekimoto (The University of Tokyo, 
+            abbr(title='National Institution of Advanced Industrial Science and Technology') AIST
+            | )
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 17:10
+            |  Session #6 Development Support
+        tr
+          th How Can Testbeds Contribute to the Development Process of IoT Systems?
+          td.affiliation
+            a(href='https://twitter.com/yumu19') 湯村 翼
+            |  (
+            abbr(title='National Institute of Information and Communications Technology') NICT
+            | )
+        tr
+          th Making Code Linters with DNN (Work-In-Progress)
+          td.affiliation
+            a(href='https://hiroakimikami.github.io/') Hiroaki Mikami
+            |  (Sony)
+        tr
+          th A Plan to Improve Keyword Programming
+          td.affiliation
+            a(href='http://prg.is.titech.ac.jp/people/masuhara/') Hidehiko Masuhara
+            |  (Tokyo Institute of Technology)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 18:20
+            |  Townhall
+
+block members
+  h4 Founders
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | , 
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | , 
+      abbr(title='Tokyo Institute of Technology') Titech

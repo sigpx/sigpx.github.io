@@ -1,0 +1,104 @@
+extends ../../layout
+
+block vars
+  - const title = 'The seventh Workshop of SIGPX';
+  - const path = 'en/7';
+
+block description
+  p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience. This page shows the overview of its seventh workshop.
+
+block body
+  section#overview
+    h2 Overview
+    p Around 15 researchers including over half of students attended the event, introducing their latest research work. The attendees provided about 20min presentations and received feedback through discussions and Slack messages.
+    p
+      | We are using 
+      a(href='https://sigpx.slack.com') the Slack team
+      |  and Google Docs for fostering discussions during and even after the event. Let 
+      a#apply-mail(href) me
+      |  know if you are interested in participation, though the primary language is Japanese.
+    ul
+      li
+        strong Location:
+        |  Shibuya, Tokyo
+      li
+        strong Date:
+        |  2/5/2020 (Wed) 13:30-17:00
+      li
+        strong Topics:
+        |  "International situation and information on SIGPX" and "recent research outcomes"
+      li
+        a(href='https://sigpx.slack.com/messages/sigpx7/') Slack channel #sigpx7
+    h2 Timetable
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 14:50
+            |  Session #1
+        tr
+          th Neural Program Synthesis for Competitive Programming
+          td.affiliation Hiroaki Mikami (Preferred Networks, Inc.)
+        tr
+          th A Context-aware Keyword Programming System
+          td.affiliation Shu Aoch (Tokyo Institute of Technology)
+        tr
+          th An automatic graph layout technique that makes it easy to see the relationship among data structures
+          td.affiliation Tomoki Ogushi(Tokyo Institute of Technology)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 14:55
+            |  Session #2 Lightning Talks
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 15:10
+            |  Session #3
+        tr
+          th Programming Environment Design Research for Convivial Computing
+          td.affiliation Jun Kato (AIST)
+        tr
+          th Cryptography and Usability for Software Developer
+          td.affiliation Akira Kanaoka (Toho University)
+        tr
+          th A Visual Programming Tool for Object-oriented Programming Education
+          td.affiliation Sherif Omari (Tokyo Institute of Technology)
+        tr
+          th Formal Verification for Game QA
+          td.affiliation Isamu Hasegawa (SQUARE ENIX)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 16:28
+            |  Session #4 Coffee Break
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 16:33
+            |  Session #5
+        tr
+          th A Programming Environment based on Design Recipes
+          td.affiliation Junya Nose (Tokyo Institute of Technology)
+        tr
+          th Live Visualization for Deep Learning Development
+          td.affiliation Chunqi Zhao (The University of Tokyo)
+        tr
+          th Live Programming Support for Halide Scheduling Strategies
+          td.affiliation Yuka Takahashi (The University of Tokyo)
+
+block members
+  h4 Founders
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | , 
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | , 
+      abbr(title='Tokyo Institute of Technology') Titech
