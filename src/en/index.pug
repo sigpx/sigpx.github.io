@@ -2,6 +2,7 @@ extends ../layout
 
 block vars
   - const path = 'en/';
+  - const events = JSON.parse(fs.readFileSync('src/en/events.json'));
 
 block description
   p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience.
@@ -35,133 +36,24 @@ block body
       strong anybody interested in Programming Experience
       | .
   section#events
-    h2
-      | The Tenth Workshop 
-      span.gray (12/22/2022)
-      |  
-      span.label NEW!
-    ul
-      li
-        strong Official language:
-        |  Japanese
-      li
-        strong Where:
-        |  Online (Zoom)
-      li
-        strong When:
-        |  12/22/2022 1:30pm- (
-        abbr(title='Japan Standard Time') JST
-        | )
-    //  <p class="details"><a href="https://forms.gle/yUWWRV6kMufkdV1WA" class="red">Register to attend &#9786;</a></p> 
-    p.details
-      a(href='/en/10') More Details? ☺
-      br
-    h2
-      | The Ninth Workshop 
-      span.gray (3/23/2022)
-    ul
-      li
-        strong Official language:
-        |  Japanese
-      li
-        strong Where:
-        |  Online (Zoom)
-      li
-        strong When:
-        |  3/23/2022 1:30pm-4pm (
-        abbr(title='Japan Standard Time') JST
-        | )
-    p.details
-      a(href='/en/9') More Details? ☺
-      br
-    h2
-      | The Eighth Workshop 
-      span.gray (3/19/2021)
-    ul
-      li
-        strong Official language:
-        |  Japanese
-      li
-        strong Where:
-        |  Online
-      li
-        strong When:
-        |  3/19/2021 11am-3:30pm (
-        abbr(title='Japan Standard Time') JST
-        | )
-    p.details
-      a(href='/en/8') More Details? ☺
-      br
-    h2
-      | The Seventh Workshop 
-      span.gray (2/5/2020)
-    p Around 15 researchers including over half of students attended the event, introducing their latest research work. The attendees provided about 20min presentations and received feedback through discussions and Slack messages.
-    p.details
-      a(href='/en/7') More Details? ☺
-      br
-    h2
-      | The Sixth Workshop 
-      span.gray (3/2/2019)
-    p
-      | The sixth workshop was held in conjunction with the NII Shonan meeting on 
-      a(href='https://shonan.nii.ac.jp/seminars/147/') Self-supporting, Extensible Programming Languages and Environments for Exploratory, Live Software Development
-      | .
-    p.details
-      a(href='/en/6') More Details? ☺
-      br
-    h2
-      | The Fifth Workshop 
-      span.gray (12/3/2018)
-    p Around 20 researchers including over half of students attended the event, introducing their latest research work. The attendees provided 15min or 10min presentations and received feedback through 3 minutes of discussions and Slack messages.
-    p.details
-      a(href='/en/5') More Details? ☺
-      br
-    h2
-      | The Forth Workshop 
-      span.gray (3/2/2018)
-    p
-      | Around 20 researchers including about half of students attended the event, introducing their latest research work in a simplified version of 
-      a(href='//dreamsongs.com/Files/WritersWorkshopTypeset.pdf') the Writer's Workshop format
-      | . Some attendees provided 15min presentations followed by 5 or more minutes of critiques, reviews, and general discussions. Others provided short (3min or more) lightning talks.
-    p.details
-      a(href='/en/4') More Details? ☺
-      br
-    h2
-      abbr(title='Programming Experience') PX
-      |  Special Issue in 
-      abbr(title='Information Processing Society of Japan') IPSJ
-      |  Journal 
-      span.gray (Nov. 2017)
-    p
-      | A special issue titled 
-      strong "Emerging Research on Programming Experience: From Language Design to Industrial Applications"
-      |  collected seven articles that covered broad and latest topics in 
-      abbr(title='Programming Experience') PX
-      | , not only in academia (programming language, software engineering, and human-computer interaction) but also in startup and maker cultures, written by established professionals in the field.
-    p.details
-      a.blue(href='/en/ipsj2017') More Details? ☺
-      br
-    h2
-      | The Third Workshop 
-      span.gray (7/8/2017)
-    p Despite the short notice, around 10 researchers and engineers from the world attended the event, presenting their latest outcome and discussing the future of programming experience.
-    p.details
-      a(href='/en/3') More Details? ☺
-      br
-    h2
-      | The Second Workshop 
-      span.gray (8/7/2016)
-    p 30 researchers, engineers, and interaction designers dealing with programming languages, tools, integrated development environments attended the event, learning relevant research fields and industry efforts and getting to know each other through long (15-25min) and short (1-3min) introduction of their work.
-    p.details
-      a(href='/en/2') More Details? ☺
-      br
-    h2
-      | The First Workshop 
-      span.gray (2/27/2016)
-    p 36 researchers, engineers, and evangelists dealing with programming languages, tools, integrated development environments attended the event, getting to know each other through long (15min) and short (1min) introduction of their work.
-    p.details
-      a(href='/en/1') More Details? ☺
-      br
+    each event in events
+      h2
+        != event.titleHtml
+        span.gray (#{event.date})
+        if event.label
+          != ' '
+          span.label= event.label
+      if event.details.length
+        ul
+          each detail in event.details
+            li
+              strong= detail.label
+              != ' ' + detail.content
+      if event.summary
+        p!= event.summary
+      p.details
+        a(href=event.link) More Details? ☺
+        br
   section#related-events
     h2 Relevant Events and Conferences
     dl

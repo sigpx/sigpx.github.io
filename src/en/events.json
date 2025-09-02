@@ -1,0 +1,92 @@
+[
+  {
+    "titleHtml": "The Tenth Workshop",
+    "date": "12/22/2022",
+    "label": "NEW!",
+    "details": [
+      { "label": "Official language:", "content": "Japanese" },
+      { "label": "Where:", "content": "Online (Zoom)" },
+      { "label": "When:", "content": "12/22/2022 1:30pm- (<abbr title=\"Japan Standard Time\">JST</abbr>)" }
+    ],
+    "summary": "",
+    "link": "/en/10"
+  },
+  {
+    "titleHtml": "The Ninth Workshop",
+    "date": "3/23/2022",
+    "details": [
+      { "label": "Official language:", "content": "Japanese" },
+      { "label": "Where:", "content": "Online (Zoom)" },
+      { "label": "When:", "content": "3/23/2022 1:30pm-4pm (<abbr title=\"Japan Standard Time\">JST</abbr>)" }
+    ],
+    "summary": "",
+    "link": "/en/9"
+  },
+  {
+    "titleHtml": "The Eighth Workshop",
+    "date": "3/19/2021",
+    "details": [
+      { "label": "Official language:", "content": "Japanese" },
+      { "label": "Where:", "content": "Online" },
+      { "label": "When:", "content": "3/19/2021 11am-3:30pm (<abbr title=\"Japan Standard Time\">JST</abbr>)" }
+    ],
+    "summary": "",
+    "link": "/en/8"
+  },
+  {
+    "titleHtml": "The Seventh Workshop",
+    "date": "2/5/2020",
+    "details": [],
+    "summary": "Around 15 researchers including over half of students attended the event, introducing their latest research work. The attendees provided about 20min presentations and received feedback through discussions and Slack messages.",
+    "link": "/en/7"
+  },
+  {
+    "titleHtml": "The Sixth Workshop",
+    "date": "3/2/2019",
+    "details": [],
+    "summary": "The sixth workshop was held in conjunction with the NII Shonan meeting on <a href=\"https://shonan.nii.ac.jp/seminars/147/\">Self-supporting, Extensible Programming Languages and Environments for Exploratory, Live Software Development</a>.",
+    "link": "/en/6"
+  },
+  {
+    "titleHtml": "The Fifth Workshop",
+    "date": "12/3/2018",
+    "details": [],
+    "summary": "Around 20 researchers including over half of students attended the event, introducing their latest research work. The attendees provided 15min or 10min presentations and received feedback through 3 minutes of discussions and Slack messages.",
+    "link": "/en/5"
+  },
+  {
+    "titleHtml": "The Forth Workshop",
+    "date": "3/2/2018",
+    "details": [],
+    "summary": "Around 20 researchers including about half of students attended the event, introducing their latest research work in a simplified version of <a href=\"//dreamsongs.com/Files/WritersWorkshopTypeset.pdf\">the Writer's Workshop format</a>. Some attendees provided 15min presentations followed by 5 or more minutes of critiques, reviews, and general discussions. Others provided short (3min or more) lightning talks.",
+    "link": "/en/4"
+  },
+  {
+    "titleHtml": "<abbr title=\"Programming Experience\">PX</abbr> Special Issue in <abbr title=\"Information Processing Society of Japan\">IPSJ</abbr> Journal",
+    "date": "Nov. 2017",
+    "details": [],
+    "summary": "A special issue titled <strong>\"Emerging Research on Programming Experience: From Language Design to Industrial Applications\"</strong> collected seven articles that covered broad and latest topics in <abbr title=\"Programming Experience\">PX</abbr>, not only in academia (programming language, software engineering, and human-computer interaction) but also in startup and maker cultures, written by established professionals in the field.",
+    "link": "/en/ipsj2017"
+  },
+  {
+    "titleHtml": "The Third Workshop",
+    "date": "7/8/2017",
+    "details": [],
+    "summary": "Despite the short notice, around 10 researchers and engineers from the world attended the event, presenting their latest outcome and discussing the future of programming experience.",
+    "link": "/en/3"
+  },
+  {
+    "titleHtml": "The Second Workshop",
+    "date": "8/7/2016",
+    "details": [],
+    "summary": "30 researchers, engineers, and interaction designers dealing with programming languages, tools, integrated development environments attended the event, learning relevant research fields and industry efforts and getting to know each other through long (15-25min) and short (1-3min) introduction of their work.",
+    "link": "/en/2"
+  },
+  {
+    "titleHtml": "The First Workshop",
+    "date": "2/27/2016",
+    "details": [],
+    "summary": "36 researchers, engineers, and evangelists dealing with programming languages, tools, integrated development environments attended the event, getting to know each other through long (15min) and short (1min) introduction of their work.",
+    "link": "/en/1"
+  }
+]

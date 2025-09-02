@@ -1,0 +1,124 @@
+[
+  {
+    "id": "tenth-sigpx",
+    "title": "第10回",
+    "suffix": " 勉強会",
+    "label": "NEW!",
+    "details": [
+      { "label": "場所:", "content": "オンライン開催（Zoom）" },
+      { "label": "日時:", "content": "2022年12月22日（木）午後1時30分～午後4時" }
+    ],
+    "summary": "マイコン用開発環境、差分実行によるライブプログラミングの性能向上、深層学習の教育用ツールについての発表のほか、PX関連のDagstuhl Seminar 2回分の参加報告がありました。",
+    "link": { "href": "/10", "label": "第10回", "suffix": "の詳しい情報はこちら", "class": "" }
+  },
+  {
+    "id": "ninth-sigpx",
+    "title": "第9回",
+    "suffix": " 勉強会",
+    "details": [
+      { "label": "場所:", "content": "オンライン開催（Zoom）" },
+      { "label": "日時:", "content": "2022年3月23日（水）午後1時30分～午後4時" }
+    ],
+    "summary": "プログラミング教育、統合開発環境の拡張、言語処理系、メディアアート向けフレームワークやツールの提案について発表がありました。",
+    "link": { "href": "/9", "label": "第9回", "suffix": "の詳しい情報はこちら", "class": "" }
+  },
+  {
+    "id": "eighth-sigpx",
+    "title": "第8回",
+    "suffix": " 勉強会",
+    "details": [
+      { "label": "場所:", "content": "オンライン開催" },
+      { "label": "日時:", "content": "2021年3月19日（金）午前11時～午後3時30分" }
+    ],
+    "summary": "ライブプログラミングの新技術や音楽、グラフィックデザインのためのプログラミング環境などの研究紹介がありました。",
+    "link": { "href": "/8", "label": "第8回", "suffix": "の詳しい情報はこちら", "class": "" }
+  },
+  {
+    "id": "seventh-sigpx",
+    "title": "第7回",
+    "suffix": " 勉強会",
+    "details": [
+      { "label": "場所:", "content": "東京都渋谷区渋谷（詳細はSlackで告知）" },
+      { "label": "日時:", "content": "2020年2月5日（水）午後1時30分～午後5時" }
+    ],
+    "summary": "インタラクション研究や機械学習など、さまざまな分野について研究紹介や事例紹介を行いました。",
+    "link": { "href": "/7", "label": "第7回", "suffix": "の詳しい情報はこちら", "class": "" }
+  },
+  {
+    "id": "sixth-sigpx",
+    "title": "第6回",
+    "suffix": " 勉強会",
+    "details": [
+      { "label": "場所:", "content": "<a href=\"https://foundx.jp/about/\">FoundX</a>" },
+      { "label": "日時:", "content": "2019年3月2日（土）午前11時～午後1時" }
+    ],
+    "summary": "第6回は第147回 湘南会議「<a href=\"https://shonan.nii.ac.jp/seminars/147/\">Self-supporting, Extensible Programming Languages and Environments for Exploratory, Live Software Development</a>」にあわせて開催されました。日欧を中心に国際的な研究者が集まって研究内容を紹介しました。",
+    "link": { "href": "/6", "label": "第6回", "suffix": "の詳しい情報はこちら", "class": "" }
+  },
+  {
+    "id": "fifth-sigpx",
+    "title": "第5回",
+    "suffix": " 勉強会",
+    "details": [
+      { "label": "場所:", "content": "<a href=\"https://www.s.u-tokyo.ac.jp/ja/map/map06.html\">東京大学本郷キャンパス 理学部7号館</a> 2階202講義室" },
+      { "label": "日時:", "content": "2018年12月3日（月）午後2時～6時" }
+    ],
+    "summary": "プログラミング言語からインタラクション研究まで、ソフトウェアからハードウェアまで、幅広く盛りだくさんの勉強会となりました。",
+    "link": { "href": "/5", "label": "第5回", "suffix": "の詳しい情報はこちら", "class": "" }
+  },
+  {
+    "id": "forth-sigpx",
+    "title": "第4回",
+    "suffix": " 勉強会",
+    "details": [
+      { "label": "場所:", "content": "<a href=\"http://www.u-tokyo.ac.jp/campusmap/cam01_04_03_j.html\">東京大学本郷キャンパス 工学部2号館</a> 4階242講義室" },
+      { "label": "日時:", "content": "2018年3月2日（金）午後1時～6時" }
+    ],
+    "summary": "しっかり質疑や議論の時間も取りながら、研究発表やLightning Talkを行いました。今回から<a href=\"http://sigchi.jp/about.html\">Japan ACM SIGCHI Chapter</a>の共催となりました。",
+    "link": { "href": "/4", "label": "第4回", "suffix": "の詳しい情報はこちら", "class": "" }
+  },
+  {
+    "id": "ipsj2017",
+    "title": "「情報処理」小特集",
+    "suffix": " プログラミング・エクスペリエンスの新潮流",
+    "details": [
+      { "label": "掲載誌:", "content": "<a href=\"https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_opensearch&index_id=8970\">情報処理学会 学会誌「情報処理」Vol.58 No.11</a>" },
+      { "label": "購入リンク:", "content": "<a href=\"https://www.fujisan.co.jp/product/1300001377/b/1578566/\">Fujisan.co.jp</a> / <a href=\"http://shop.ohmsha.co.jp/shop/shopdetail.html?brandcode=000000005130\">オーム社</a> / <a href=\"https://www.amazon.co.jp/dp/B075ZH5JF7/\">Amazon.co.jp</a>" }
+    ],
+    "summary": "本勉強会で扱ってきたさまざまなトピックをカバーした小特集が、情報処理学会の学会誌に掲載されました！",
+    "link": { "href": "/ipsj2017", "label": "学会誌連動ページ", "suffix": "はこちら", "class": "blue" }
+  },
+  {
+    "id": "third-sigpx",
+    "title": "第3回",
+    "suffix": " 勉強会",
+    "details": [
+      { "label": "場所:", "content": "東京工業大学 大岡山キャンパス 西8号館 W棟 10階 1008室" },
+      { "label": "日時:", "content": "2017年7月8日（土）午前11時～午後4時" }
+    ],
+    "summary": "開催予告から一週間以内の開催と忙しないスケジュールながら、さまざまな背景の人が集まり、研究紹介や事例紹介を行いました。",
+    "link": { "href": "/3", "label": "第3回", "suffix": "の詳しい情報はこちら", "class": "" }
+  },
+  {
+    "id": "second-sigpx",
+    "title": "第2回",
+    "suffix": " 勉強会",
+    "details": [
+      { "label": "場所:", "content": "<a href=\"https://www.microsoft.com/ja-jp/mscorp/branch/sgt.aspx\">日本マイクロソフト株式会社</a> 品川本社 31F セミナールームC+D（遠隔参加も可能）" },
+      { "label": "日時:", "content": "2016年8月7日（日）午前10時半～午後6時" }
+    ],
+    "summary": "前回同様、プログラミング言語やプログラミングを支援するツール、統合開発環境などを研究開発している研究者・エンジニアの方々を中心に集まり、自己紹介を兼ねて事例紹介を行いました。また、国際会議などの動向に関する報告セッションも設けました。",
+    "link": { "href": "/2", "label": "第2回", "suffix": "の詳しい情報はこちら", "class": "" }
+  },
+  {
+    "id": "first-sigpx",
+    "title": "第1回",
+    "suffix": " 勉強会",
+    "details": [
+      { "label": "場所:", "content": "東京工業大学 大岡山キャンパス 西8号館 W棟 10階 1008室（遠隔参加も可能）" },
+      { "label": "日時:", "content": "2016年2月27日（土）午前11時～午後6時" }
+    ],
+    "summary": "プログラミング言語やプログラミングを支援するツール、統合開発環境などを研究開発している研究者・エンジニアの方々を中心に集まり、自己紹介を兼ねて事例紹介を行いました。幅広い立場、分野の方の発表があり、懇親会まで議論が尽きませんでした。開催前より<a href=\"https://www.facebook.com/groups/sigpx\">Facebookグループ</a>で情報交換を行っていましたが、全体議論の内容も踏まえ、<a href=\"https://sigpx.slack.com\">Slack</a>の運用を始めました。",
+    "link": { "href": "/1", "label": "第1回", "suffix": "の詳しい情報はこちら", "class": "" }
+  }
+]
