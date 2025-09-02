@@ -20,7 +20,7 @@ function merge() {
 }
 
 function html() {
-  return src('src/1/index.pug', { base: 'src/1' })
+  return src(['src/**/*.pug', '!src/layout.pug'])
     .pipe(pug({ locals: { fs } }))
     .pipe(dest('dist'));
 }
