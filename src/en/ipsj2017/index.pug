@@ -8,16 +8,106 @@ block description
   p A special issue titled "Emerging Research on Programming Experience: From Language Design to Industrial Applications" collected seven articles that covered broad and latest topics in PX, not only in academia (programming language, software engineering, and human-computer interaction) but also in startup and maker cultures, written by established professionals in the field.
 
 block body
-  include index.body.pug
+  p.pull-right
+    a(href='https://www.amazon.co.jp/dp/B075ZH5JF7/' target='_blank')
+      //  removed: /ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=digitalmuseum-22&linkId=1b95b2c25cb4af1215ecd7bf91bde368 
+      img(border='0' src='//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B075ZH5JF7&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=digitalmuseum-22')
+    img(src='https://ir-jp.amazon-adsystem.com/e/ir?t=digitalmuseum-22&l=li3&o=9&a=B075ZH5JF7' width='1' height='1' border='0' alt style='border:none !important; margin:0px !important;')
+  section#overview
+  h2 Index
+  p
+    | All of the articles are written in Japanese. Meanwhile, for Sean's article on live programming, you can read almost the same content in English in 
+    a(href='https://2017.splashcon.org/track/live-2017#A-Brief-Intro-to-Live-Programming') the LIVE CFP page
+    | .
+  table
+    tbody
+      tr.title
+        th(colspan='2')
+          a(href='https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_opensearch&index_id=8970')
+            abbr(title='Information Processing Society of Japan') IPSJ
+            |  Journal Vol.58 No.11
+      tr
+        th
+          a(href='http://id.nii.ac.jp/1001/00183678/') 0. Foreword
+        td.affiliation
+          a(href='https://junkato.jp') Jun Kato
+          | , 
+          a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+          |  (AIST, Titech)
+      tr
+        th
+          a(href='http://id.nii.ac.jp/1001/00183679/') 1. Live Programming for A Fluid Programming Experience
+        td.affiliation
+          a(href='https://harc.ycr.org/member/sean_mcdirmid/') Sean McDirmid
+          |  (Y Combinator Research 
+          abbr(title='Human Advancement Research Community') HARC
+          | ); 
+          a(href='https://junkato.jp') Jun Kato
+          |  (translation)
+      tr
+        th
+          a(href='http://id.nii.ac.jp/1001/00183680/') 2. Seeing New Trends in PX through Startup Examples
+        td.affiliation
+          a(href='https://medium.com/@tumada') Taka Umada
+          |  (The University of Tokyo)
+      tr
+        th
+          a(href='http://id.nii.ac.jp/1001/00183681/')
+            | 3. The Past, Present, and Future of Programming in 
+            abbr(title='Human-Computer Interaction') HCI
+        td.affiliation
+          a(href='http://ryosuzuki.org/') Ryo Suzuki
+          |  (University of Colorado Boulder)
+      tr
+        th
+          a(href='http://id.nii.ac.jp/1001/00183682/') 4. Programming of Consumer Electronics and Homes
+        td.affiliation
+          a(href='https://twitter.com/yumu19') Tsubasa Yumura
+          |  (NICT)
+      tr
+        th
+          a(href='http://id.nii.ac.jp/1001/00183683/') 5. Domain Specific Languages and Language-Oriented Programming
+        td.affiliation
+          a(href='https://www.csg.ci.i.u-tokyo.ac.jp/~ichikawa/') Kazuhiro Ichikawa
+          |  (The University of Tokyo)
+      tr
+        th
+          a(href='http://id.nii.ac.jp/1001/00183684/') 6. Toward Easy COmpiler Warning Messages for Novice Programmers
+        td.affiliation
+          a(href='http://www.sde.cs.titech.ac.jp/~gondow/') Katsuhiko Gondow
+          |  et al. (Titech)
+      tr
+        th
+          a(href='http://id.nii.ac.jp/1001/00183685/') 7. Programming Activity Analysis using Biological Information
+        td.affiliation
+          a(href='http://www.info.nara-k.ac.jp/~uwano/') Hidetake Uwano
+          |  (NIT, Nara College)
+  section#references
+  h2 Links
+  dl
+    dt
+      a(href='https://docs.google.com/document/d/176yfANBFr0txgYJSROFPEdGkPwXhicrP9YZu_bJlgyg/edit') PX Researchers - Google Docs
+    dd Google Docs listing researchers, conferences, workshops and fundings related to PX.
+    dt
+      a(href='https://scrapbox.io/ProgrammingExperience/') ProgrammingExperience - Scrapbox
+      |  (Japanese)
+    dd Wiki-like page collecting keywords related to PX.
+    dt
+      a(href='https://sigpx.slack.com') SIGPX Slack
+      |  (Official language: Japanese)
+    dd
+      | Slack for exchanging information related to PX. 
+      a(href='https://join.slack.com/t/sigpx/shared_invite/enQtMzY5MzU0NjExNDU4LTZkN2U3Yjc2M2I3ZDAzMzUyN2E2NThlNDE0ZGZjMDkyNGUwNzVhMzBmMDY5YTNkMTY0YWQyN2JkMjBkMzYwNTU') This link
+      |  allows you to join the Slack.
 
 block members
   h4 Founders
   ul
     li
       a#jk(href='https://junkato.jp') Jun Kato
-      | ,
+      | , 
       abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
     li
       a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
-      | ,
+      | , 
       abbr(title='Tokyo Institute of Technology') Titech
