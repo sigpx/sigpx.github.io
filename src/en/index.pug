@@ -37,8 +37,7 @@ block body
       | .
   section#events
     each event in events
-      h2
-        != event.titleHtml
+      h2= event.title
         span.gray (#{event.date})
         if event.label
           != ' '
