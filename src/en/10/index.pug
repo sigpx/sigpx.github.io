@@ -1,0 +1,63 @@
+extends ../../layout
+
+block vars
+  - const title = 'The tenth Workshop of SIGPX';
+  - const path = 'en/10';
+
+block description
+  p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience. This page shows the overview of its tenth workshop.
+
+block body
+  section#overview
+    h2 Overview
+    p
+      a(href='https://prg.is.titech.ac.jp/en/people/cong/') Youyou Cong
+      |  and 
+      a(href='https://junkato.jp') Jun Kato
+      |  reported their Dagstuhl Seminar experiences (
+      a(href='https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22302') #22302
+      | , 
+      a(href='https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=22231') #22231
+      | ). Additionally, researchers shared their recent research outcomes.
+    p
+      | We are using 
+      a(href='https://sigpx.slack.com') the Slack team
+      |  and Google Docs for fostering discussions during and even after the event. Let 
+      a#apply-mail(href) me
+      |  know if you are interested in participation, though the primary language is Japanese.
+    ul
+      li
+        strong Location:
+        |  Online
+      li
+        strong Date:
+        |  12/22/2022 (Wed) 13:30-16:00
+      li
+        strong Topics:
+        |  "Dagstuhl Seminar reports" and "recent research outcomes"
+      li
+        a(href='https://sigpx.slack.com/messages/sigpx10/') Slack channel #sigpx10
+    h2#recordings Dagstuhl Seminar reports (recordings)
+    .row
+      .column
+        iframe(width='100%' src='https://www.youtube.com/embed/1Z-g2R8y688' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen)
+        p.caption
+          a(href='/10/sigpx10-cong-dagstuhl22302.pdf') Presentation slides (PDF)
+      .column
+        iframe(width='100%' src='https://www.youtube.com/embed/orxfmDNBdyI' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen)
+        p.caption
+          a(href='/10/sigpx10-kato-dagstuhl22231.pdf') Presentation slides (PDF)
+    h2 Timetable
+    iframe(style='width: 100%; min-height: 50vh' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vTovJSfl_DGEezXolO81a1i8tt-xJ5RvXK8yA_Kv0QsmFJ_zSkuzZH5QwsDbB0172EU22_iyIwDeq8H/pubhtml?gid=2109870622&single=true&widget=true&headers=false')
+
+block members
+  h4 Founders
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | , 
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | , 
+      abbr(title='Tokyo Institute of Technology') Titech

@@ -1,0 +1,106 @@
+extends ../../layout
+
+block vars
+  - const title = 'The Third Workshop of SIGPX';
+  - const path = 'en/3';
+
+block description
+  p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience. This page shows the overview of its third workshop.
+
+block body
+  section#overview
+    h2 Overview
+    p 30 researchers, engineers, and interaction designers dealing with programming languages, tools, integrated development environments attended the event, learning relevant research fields and industry efforts and getting to know each other through long (15-25min) and short (1-3min) introduction of their work.
+    p
+      | The presentations took a broad range of topics and the discussions continue until the very end of the workshop. We are using 
+      a(href='https://sigpx.slack.com') the Slack team
+      |  for fostering discussions during and even after the event. Let 
+      a#apply-mail(href) me
+      |  know if you are interested in participation, though the primary language is Japanese.
+    ul
+      li
+        strong Location:
+        |  Tokyo Institute of Technology
+      li
+        strong Date:
+        |  7/8/2017 (Sat) 11:00-16:00
+      li
+        strong Topics:
+        |  "Domestic and international situation and information on SIGPX" and "case studies with self introductions"
+      li
+        a(href='https://sigpx.slack.com/messages/sigpx3/') Slack channel #sigpx3
+    h2 Timetable
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 11:00
+            |  Session #0
+        tr
+          th Overview of SIGPX
+          td.affiliation
+            a(href='https://junkato.jp') Jun Kato
+            |  (
+            abbr(title='National Institution of Advanced Industrial Science and Technology') AIST
+            | ), 
+            a(href='http://prg.is.titech.ac.jp/people/masuhara/') Hidehiko Masuhara
+            |  (Tokyo Institute of Technology)
+        tr
+          th Self introduction
+          td Everyone
+        tr
+          th Prototyping of A Particle Simulation Programming Environment
+          td.affiliation
+            | Yoshiki Oshima (Y Combinator Research, 
+            a(href='https://harc.ycr.org')
+              abbr(title='Human Advancement Research Community') HARC
+            | )
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 12:15
+            |  Lunch
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 13:30
+            |  Session #1
+        tr
+          th Live Programming Environment for Data Structures
+          td.affiliation
+            a(href='http://a-oka.org/') Akio Oka
+            |  (Tokyo Institute of Technology)
+        tr
+          th A Plan for Making Virtual Reality-enabled Viscuit
+          td.affiliation Keita Watanabe (Tokyo Institute of Technology)
+        tr
+          th
+            a(href='https://www.slideshare.net/HiroakiMikami/sigpx-25') Thoughts on DeepCoder
+          td.affiliation Hiroaki Mikami (Sony)
+        tr
+          th f3.js: A Social Programming Environment for Programmers, Makers, and End-users
+          td.affiliation
+            a(href='https://junkato.jp') Jun Kato
+            |  (
+            abbr(title='National Institution of Advanced Industrial Science and Technology') AIST
+            | )
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 17:45
+            |  Discussion
+
+block members
+  h4 Founders
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | , 
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | , 
+      abbr(title='Tokyo Institute of Technology') Titech

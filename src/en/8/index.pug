@@ -1,0 +1,104 @@
+extends ../../layout
+
+block vars
+  - const title = 'The eighth Workshop of SIGPX';
+  - const path = 'en/8';
+
+block description
+  p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience. This page shows the overview of its eighth workshop.
+
+block body
+  section#overview
+    h2 Overview
+    p 17 researchers (including 6 students) attended the event, introducing their latest research work. The attendees provided about 20min presentations and received feedback through discussions and Slack messages.
+    p
+      | We are using 
+      a(href='https://sigpx.slack.com') the Slack team
+      |  and Google Docs for fostering discussions during and even after the event. Let 
+      a#apply-mail(href) me
+      |  know if you are interested in participation, though the primary language is Japanese.
+    ul
+      li
+        strong Location:
+        |  Online
+      li
+        strong Date:
+        |  3/19/2021 (Fri) 11:00-15:30
+      li
+        strong Topics:
+        |  "International situation and information on SIGPX" and "recent research outcomes"
+      li
+        a(href='https://sigpx.slack.com/messages/sigpx8/') Slack channel #sigpx8
+    h2 Timetable
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 14:50
+            |  Session #1
+        tr
+          th Introduction
+          td.affiliation SIGPX committee
+        tr
+          th Some PX-related papers published at CHI 2020
+          td.affiliation
+            | Jun Kato (
+            abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+            | )
+        tr
+          th Automatic Selection of Best-matching Diagram for a Given Code
+          td.affiliation Chiaki Ito (The University of Tokyo)
+        tr
+          th Automatically Generating Feedback in HtDP-based Programming
+          td.affiliation
+            | Junya Nose (
+            abbr(title='Tokyo Institute of Technology') Titech
+            | )
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 12:10
+            |  Session #2 Self-introduction（Lightning Talk）
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 13:30
+            |  Session #3
+        tr
+          th A survey of programming languages for music and sound
+          td.affiliation Tomoya Matsuura (Graduate School of Design, Kyushu University)
+        tr
+          th Visual programming environment for audio/midi dataflow on embedded hardware
+          td.affiliation Kai Aoki (sigboost, inc.)
+        tr
+          th My activities to enhance PX around Java lang
+          td.affiliation Kengo Toda (SpotBugs team)
+        tr
+          th Preliminary Case Study on Block Programming Language for Competitive Programming
+          td.affiliation Hiroaki Mikami (Preferred Networks Inc.)
+        tr
+          th Hardware Metaprogramming in Python
+          td.affiliation Shinya Takamaeda (The University of Tokyo)
+        tr
+          th Lisp-based visual programming for graphic design
+          td.affiliation Baku Hashimoto (INS Studio)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 15:25
+            |  Session #4 Townhall
+
+block members
+  h4 Founders
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | , 
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | , 
+      abbr(title='Tokyo Institute of Technology') Titech
