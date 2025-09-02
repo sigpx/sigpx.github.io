@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "SIGPX website",
   "scripts": {
-    "start": "browser-sync start --server --files='.'"
+    "start": "browser-sync start --server --files='.'",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,8 @@
   },
   "homepage": "https://github.com/sigpx/sigpx.github.io#readme",
   "dependencies": {
-    "browser-sync": "^2.27.10"
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-tap": "^2.0.0"
   }
 }
