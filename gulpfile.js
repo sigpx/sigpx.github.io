@@ -1,5 +1,6 @@
-const { src, dest, task, parallel } = require('gulp');
+const { src, dest, series, parallel } = require('gulp');
 const tap = require('gulp-tap');
+const pug = require('gulp-pug');
 const fs = require('fs');
 const path = require('path');
 
@@ -18,12 +19,18 @@ function merge() {
     .pipe(dest('dist'));
 }
 
-function copy() {
-  return src(['src/**/*', '!src/**/*.html'], { encoding: false })
+function html() {
+  return src('src/1/index.pug', { base: 'src/1' })
+    .pipe(pug({ locals: { fs } }))
     .pipe(dest('dist'));
 }
 
-const build = parallel(merge, copy);
+function copy() {
+  return src(['src/**/*', '!src/**/*.html', '!src/**/*.pug', '!src/**/call.txt'], { encoding: false })
+    .pipe(dest('dist'));
+}
+
+const build = series(parallel(merge, copy), html);
 
 exports.build = build;
 exports.default = build;
