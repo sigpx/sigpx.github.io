@@ -1,0 +1,92 @@
+extends ../layout
+
+block vars
+  - const title = '第3回勉強会';
+  - const path = '3';
+
+block description
+  p SIGPXは、プログラミングのための環境と、その環境が提供する体験の設計に興味を持つ人で集まり、最新の研究動向や事例について情報交換する会です。このページでは第3回勉強会の開催内容を紹介しています。
+
+block body
+  section#overview
+    h2 概要
+    p 開催予告から一週間以内の開催と忙しないスケジュールながら、さまざまな背景の人が集まり、研究紹介や事例紹介を行いました。
+    ul
+      li
+        strong 場所:
+        |  東京工業大学 大岡山キャンパス 西8号館 W棟 10階 1008室
+      li
+        strong 日時:
+        |  2017年7月8日（土）午前11時～午後4時
+      li
+        strong テーマ:
+        |  「SIGPXに関する国内外の状況・情報の有と整理」および「参加者各自の自己紹介を兼ねたSIGPX事例紹介」
+      li
+        a(href='https://sigpx.slack.com/messages/sigpx3/') Slackチャンネル #sigpx3
+    h2
+      | プログラム
+      span.gray (2017年7月16日 掲載)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 11:00
+            |  Session #0
+        tr
+          th SIGPXの概要
+          td.affiliation
+            a(href='https://junkato.jp/ja') 加藤 淳
+            |  (産業技術総合研究所)
+        tr
+          th(colspan='2') 自己紹介
+        tr
+          th エンドユーザー向けパーティクルシミュレーション言語の試作について
+          td.affiliation
+            a(href='https://harc.ycr.org/member/yoshiki_ohshima/') 大島 芳樹
+            |  (Y Combinator Research,
+            a(href='https://harc.ycr.org')
+              abbr(title='Human Advancement Research Community') HARC
+            | )
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 12:15
+            |  お昼ごはん
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 13:30
+            |  Session #1
+        tr
+          th データ構造のためのライブプログラミング環境
+          td.affiliation
+            a(href='http://a-oka.org/') 岡 明央
+            |  (東京工業大学)
+        tr
+          th VR版Viscuit制作計画
+          td.affiliation 渡邉 恵大 (東京工業大学)
+        tr
+          th
+            a(href='https://www.slideshare.net/HiroakiMikami/sigpx-25') DeepCoder 感想 & 所感
+          td.affiliation 三上 裕明 (ソニー)
+        tr
+          th プログラマ・Maker・エンドユーザのためのソーシャルな開発環境f3.js
+          td.affiliation
+            a(href='https://junkato.jp/ja') 加藤 淳
+            |  (産業技術総合研究所)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 17:00
+            |  全体議論
+
+block members
+  h4 発起人（順不同）
+  p
+    a#jk(href='https://junkato.jp/ja') 加藤 淳
+    | （産業技術総合研究所, AIST）
+    a(href='http://prg.is.titech.ac.jp/ja/people/masuhara/') 増原 英彦
+    | （東京工業大学）

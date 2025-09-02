@@ -1,0 +1,150 @@
+extends ../layout
+
+block vars
+  - const title = '第4回勉強会';
+  - const path = '4';
+  - const call = fs.readFileSync('src/4/call.txt', 'utf8');
+
+block description
+  p SIGPXは、プログラミングのための環境と、その環境が提供する体験の設計に興味を持つ人で集まり、最新の研究動向や事例について情報交換する会です。このページでは第4回勉強会の開催内容を紹介しています.
+
+block body
+  section#overview
+    p(style="float: right; margin: 15px 10px;")
+      img(src="http://sigchi.jp/assets/images/SIGCHI_logo.png" width="240")
+    h2 概要
+    p
+      | 20名程度で集まって、しっかり質疑や議論の時間も取りながら、研究発表やLightning Talkを行いました。今回から
+      a(href="http://sigchi.jp/about.html") Japan ACM SIGCHI Chapter
+      | の共催となりました。
+    ul
+      li
+        strong 場所:
+        |  
+        a(href="http://www.u-tokyo.ac.jp/campusmap/cam01_04_03_j.html") 東京大学本郷キャンパス 工学部2号館
+        |  4階242講義室
+      li
+        strong 日時:
+        |  2018年3月2日（金） 13時から（12時半開場）
+      li
+        strong テーマ:
+        |  「プログラミング体験（PX）に関する研究紹介」
+      li
+        strong 共催:
+        |  
+        a(href="http://sigchi.jp/about.html") Japan ACM SIGCHI Chapter
+    h2
+      | プログラム 
+      span.gray (2018年3月4日 掲載)
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 13:00
+            |  Session #0
+        tr
+          th SIGPXの概要・国際的な研究動向
+          td.affiliation 加藤・増原 (産業技術総合研究所・東京工業大学)
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 13:10
+            |  Session #1 Social Coding (1)
+        tr
+          th GitHub のプルリクエストを用いた プログラミング課題自動生成システム
+          td.affiliation
+            a(href="https://shiba.uno/?lang=ja") 柴藤 大介
+            | , 三島 潤平, 矢谷 浩司 (東京大学)
+        tr
+          th DiDA: GitHub上のコード変更と開発履歴に関するデータセット
+          td.affiliation 三島 潤平, 柴藤 大介, 矢谷 浩司 (東京大学)
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 14:15
+            |  Session #2 Live Programming
+        tr
+          th How Sexy Kanon is?
+          td.affiliation
+            a(href="http://a-oka.org") 岡 明央
+            | , 増原 英彦, 青谷 知幸 (東京工業大学)
+        tr
+          th User Interfaces for Live Programming (LIVE keynote短縮版)
+          td.affiliation
+            a(href="https://junkato.jp/ja") 加藤 淳
+            |  (産業技術総合研究所)
+        tr
+          th Reactile: Programming Swarm User Interfaces through Direct Physical Manipulation
+          td.affiliation
+            a(href="http://ryosuzuki.org") Ryo Suzuki
+            | , Jun Kato, Mark D. Gross, Tom Yeh (UC Boulder, AIST)
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 15:10
+            |  Session #3 Lightning Talks
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 15:40
+            |  Session #4 おやつ
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 16:10
+            |  Session #5 Social Coding (2)
+        tr
+          th Code Examination Support Using GitHub Pull Requests
+          td.affiliation
+            a(href="https://shiba.uno/")
+            | Daisuke Shibato, Shota Miyazaki, Koji Yatani (The University of Tokyo)
+        tr
+          th 同期的共同作業における作業者の存在感を増強するカーソル拡張型コミュニケーション手段
+          td.affiliation
+            a(href="http://www.0x0c.me") 松田 暁
+            | , 加藤 淳, 尾形 正泰, 濱崎 雅弘, 後藤 真孝, 暦本 純一 (東京大学・産業技術総合研究所)
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 17:10
+            |  Session #6 Development Support
+        tr
+          th IoTシステムの開発プロセスにテストベッドはどのように貢献できるか?
+          td.affiliation
+            a(href="https://twitter.com/yumu19") 湯村 翼
+            |  (情報通信研究機構)
+        tr
+          th DNNを使ったLinter (Work-In-Progress)
+          td.affiliation
+            a(href="https://hiroakimikami.github.io/") 三上 裕明
+            |  (ソニー株式会社)
+        tr
+          th 「それらしい」プログラムの自動生成法をもとむ
+          td.affiliation
+            a(href="http://prg.is.titech.ac.jp/ja/people/masuhara/") 増原 英彦
+            |  (東京工業大学)
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 18:20
+            |  タウンホール
+  section#cfp
+    h2
+      | Call for Participation 
+      span.gray (2017年12月24日 掲載; 2018年2月3日 更新)
+    pre!= call
+
+block members
+  h4 発起人（順不同）
+  p
+    a#jk(href='https://junkato.jp/ja') 加藤 淳
+    | （産業技術総合研究所, AIST）
+    a(href='http://prg.is.titech.ac.jp/ja/people/masuhara/') 増原 英彦
+    | （東京工業大学）
