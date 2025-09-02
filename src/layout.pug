@@ -1,3 +1,69 @@
+mixin bodyForCFP(date, path)
+  - const en = path && path.startsWith('en/');
+  section#overview
+    h2 #{en ? "Overview" : "概要"}
+    - if (en) {
+    ul
+      li
+        strong Official language:
+        |  #{event.details.find(d => d.label.toLowerCase().indexOf("language") >= 0).content}
+      li
+        strong Where:
+        |  #{event.details.find(d => d.label.indexOf("Where") >= 0).content}
+      li
+        strong When:
+        |  !{event.details.find(d => d.label.indexOf("When") >= 0).content}
+    - } else {
+    ul
+      li
+        strong 場所:
+        |  #{event.details.find(d => d.label.indexOf("場所") >= 0).content}
+      li
+        strong 日時:
+        |  #{event.details.find(d => d.label.indexOf("日時") >= 0).content}
+    - }
+  - if (call && date) {
+  section#cfp
+    h2
+      | Call for Participation 
+      span.gray (#{date} 掲載)
+    pre!= call
+  - }
+
+mixin members(path)
+  - const en = path && path.startsWith('en/');
+  h4 #{en ? "Organizers" : "幹事団（順不同）"}
+  - if (en) {
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | , 
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+      | /
+      abbr(title='Arch Inc.') ARCH
+    li
+      a(href='https://hiroakimikami.github.io/') Hiroaki Mikami
+      | , 
+      abbr(title='Preferred Networks, Inc.') PFN
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | , 
+      abbr(title='Institute of Science Tokyo') Science Tokyo
+    li
+      a(href='http://prg.is.titech.ac.jp/people/cong') Youyou Cong
+      | , 
+      abbr(title='Institute of Science Tokyo') Science Tokyo
+  - } else {
+  p
+    a#jk(href='https://junkato.jp/ja') 加藤 淳
+    | （産業技術総合研究所, アーチ株式会社）
+    a(href='https://hiroakimikami.github.io/ja/') 三上 裕明
+    | （株式会社Preferred Networks）
+    a(href='http://prg.is.titech.ac.jp/ja/people/masuhara/') 増原 英彦
+    | （東京科学大学）
+    a(href='https://prg.is.titech.ac.jp/ja/people/cong/') 叢 悠悠
+    | （東京科学大学）
+  - }
 
 mixin title(title)
   title #{title && title.length > 0 ? `${title} | ` : ""} SIGPX: Special Interest Group on Programming Experience
@@ -79,6 +145,7 @@ html(lang='ja')
   block vars
     - const title = '';
     - const path = '';
+    - const call = '';
   head
     block head
       +title(title)
@@ -103,6 +170,7 @@ html(lang='ja')
         block footer
           +nav(title, path)
           block members
+            +members(path)
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

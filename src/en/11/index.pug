@@ -10,18 +10,7 @@ block description
   p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience. This page shows the overview of its eleventh workshop.
 
 block body
-  section#overview
-    h2 Overview
-    ul
-      li
-        strong Official language:
-        |  #{event.details.find(d => d.label.toLowerCase().indexOf("language") >= 0).content}
-      li
-        strong Where:
-        |  #{event.details.find(d => d.label.indexOf("Where") >= 0).content}
-      li
-        strong When:
-        |  !{event.details.find(d => d.label.indexOf("When") >= 0).content}
+  +bodyForCFP("", path)
 
 block members
   h4 Organizers
