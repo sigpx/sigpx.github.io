@@ -1,6 +1,6 @@
 
 mixin title(title)
-  title #{title} | SIGPX: Special Interest Group on Programming Experience
+  title #{title && title.length > 0 ? `${title} | ` : ""} SIGPX: Special Interest Group on Programming Experience
 
 mixin nav(title, path=null, withShare=false)
   - const encodedPath = encodeURIComponent(path);
@@ -13,7 +13,7 @@ mixin nav(title, path=null, withShare=false)
         img(src='https://b.st-hatena.com/images/entry-button/button-only@2x.png' alt='このエントリーをはてなブックマークに追加' width='20' height='20' style='border: none;')
       script(type='text/javascript' src='https://b.st-hatena.com/js/bookmark_button.js' charset='utf-8' async)
       - }
-      a.twitter-share-button(href=`https://twitter.com/intent/tweet?url=https%3A%2F%2Fsigpx.org%2F${path}` data-text=`${title} | SIGPX: Special Interest Group on Programming Experience` data-hashtags='sigpx' data-count='horizontal' data-counturl='https://sigpx.org') ツイート
+      a.twitter-share-button(href=`https://twitter.com/intent/tweet?url=https%3A%2F%2Fsigpx.org%2F${encodedPath}` data-text=`${title} | SIGPX: Special Interest Group on Programming Experience` data-hashtags='sigpx' data-count='horizontal' data-counturl='https://sigpx.org') ツイート
       script.
         window.twttr = (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
@@ -41,17 +41,23 @@ mixin nav(title, path=null, withShare=false)
     - }
     p
       a(href='/') SIGPX#{en ? '' : ' トップページ'}
+      - if (title && title.length > 0) {
       |  
       span.gray &gt;
       |  #{title}
+      - }
     hr
 
 mixin h1(title)
   h1
     img(src='https://sigpx.org/sigpx-315x315.png')
+    - if (title && title.length > 0) {
     | #{title} (
     abbr(title='Special Interest Group on Programming Experience') SIGPX
     | )
+    - } else {
+    | SIGPX: Special Interest Group on Programming Experience
+    - }
 
 mixin note(path)
   - const en = path && path.startsWith('en/');
