@@ -1,0 +1,45 @@
+extends ../../layout
+
+block vars
+  - const title = 'The ninth Workshop of SIGPX';
+  - const path = 'en/9';
+
+block description
+  p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience. This page shows the overview of its ninth workshop.
+
+block body
+  section#overview
+    h2 Overview
+    p Around ten researchers and practitioners attended the event, introducing their latest research work. The attendees provided about 20min presentations and received feedback through discussions and Slack messages.
+    p
+      | We are using 
+      a(href='https://sigpx.slack.com') the Slack team
+      |  and Google Docs for fostering discussions during and even after the event. Let 
+      a#apply-mail(href) me
+      |  know if you are interested in participation, though the primary language is Japanese.
+    ul
+      li
+        strong Location:
+        |  Online
+      li
+        strong Date:
+        |  3/23/2022 (Fri) 13:30-16:00
+      li
+        strong Topics:
+        |  "International situation and information on SIGPX" and "recent research outcomes"
+      li
+        a(href='https://sigpx.slack.com/messages/sigpx9/') Slack channel #sigpx9
+    h2 Timetable
+    iframe(style='width: 100%; min-height: 50vh' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vSmqfFUh56rqQRoV7VY4EBS3BWhnwMw1846BnVytphkrpZQzyWlmKvHetpxYs_gi9jOKhdgznWRMsMh/pubhtml?gid=2109870622&single=true&widget=true&headers=false')
+
+block members
+  h4 Founders
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | , 
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | , 
+      abbr(title='Tokyo Institute of Technology') Titech

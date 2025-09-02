@@ -1,0 +1,174 @@
+extends ../../layout
+
+block vars
+  - const title = 'The Second Workshop of SIGPX';
+  - const path = 'en/2';
+
+block description
+  p SIGPX is a Japanese domestic study group for those interested in programming environments and their programming experience, founded in January 2016. We gather for exchanging information on state-of-the-art research and development projects relevant to programming experience. This page shows the overview of its second workshop.
+
+block body
+  section#overview
+    h2 Overview
+    p 30 researchers, engineers, and interaction designers dealing with programming languages, tools, integrated development environments attended the event, learning relevant research fields and industry efforts and getting to know each other through long (15-25min) and short (1-3min) introduction of their work.
+    p
+      | The presentations took a broad range of topics and the discussions continue until the very end of the workshop. We are using 
+      a(href='https://sigpx.slack.com') the Slack team
+      |  for fostering discussions during and even after the event. Let 
+      a#apply-mail(href) me
+      |  know if you are interested in participation, though the primary language is Japanese.
+    ul
+      li
+        strong Location:
+        |  Microsoft Japan Headquarter in Shinagawa
+      li
+        strong Date:
+        |  8/7/2016 (Sun) 10:30-18:00
+      li
+        strong Topics:
+        |  "Domestic and international situation and information on SIGPX" and "case studies with self introductions"
+      li
+        a(href='https://sigpx.slack.com/messages/sigpx2/') Slack channel #sigpx2
+    h2 Timetable
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 10:50
+            |  Session #0
+        tr
+          th Overview of SIGPX
+          td.affiliation
+            a(href='https://junkato.jp') Jun Kato
+            |  (
+            abbr(title='National Institution of Advanced Industrial Science and Technology') AIST
+            | ), 
+            a(href='http://prg.is.titech.ac.jp/people/masuhara/') Hidehiko Masuhara
+            |  (Tokyo Institute of Technology)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 11:00
+            |  Session #1
+        tr
+          th
+            | A selection of interesting papers from 
+            a(href='http://2016.icse.cs.txstate.edu/') ICSE2016
+          td.affiliation Ryo Kato (DeNA)
+        tr
+          th
+            | A selection of interesting papers from 
+            a(href='http://chi2016.acm.org') CHI2016
+          td.affiliation Kenta Hara, Taiki Usuba, Raika Toriyama (Meiji University)
+        tr
+          th Short intro to Microsoft Japan
+          td.affiliation (Microsoft/sponsor presentation)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 11:50
+            |  Lunch
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 13:00
+            |  Session #2
+        tr
+          th Language-oriented Programming and Domain-specific Languages
+          td.affiliation Kazuo Ichikawa (The University of Tokyo)
+        tr
+          th Addressing the Difficult Compiler Warning Messages for Novice Programmers
+          td.affiliation Katsuhiko Gondow (Tokyo Institute of Technology)
+        tr
+          th
+            | Attendance Reports on 
+            a(href='http://www.cs.cmu.edu/~NatProg/programminglanguageusability/')
+              | CHI 
+              abbr(title='Usability of Programming Languages') UPL
+              |  Workshop
+            | /
+            a(href='http://2016.ecoop.org/track/LIVE-2016')
+              | ECOOP 
+              abbr(title='Live Programming Systems') LIVE
+              |  Workshop
+          td.affiliation
+            | Jun Kato 
+            abbr(title='National Institution of Advanced Industrial Science and Technology') AIST
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 14:00
+            |  Short Self Introduction, Tea Break
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 15:20
+            |  Session #3
+        tr
+          th Qiita and Content Authoring
+          td.affiliation Kotaro Chikuba (Increments, Inc)
+        tr
+          th Thoughs on the Rainfall Problem
+          td.affiliation Shigeru Chiba (The University of Tokyo)
+        tr
+          th
+            a(href='https://sites.google.com/site/qurihara/home/srtjs') Revisiting Timeline-based Programming for Augmenting Video Content
+          td.affiliation Kazuki Kurihara (Tsuda College)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 16:10
+            |  Short Break
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 16:50
+            |  Session #4
+        tr
+          th
+            | Attendance Reports on 
+            a(href='http://programming-experience.org/px16/')
+              abbr(title='Programming Experience') PX
+              | /16
+            |  and Some Announcements
+          td.affiliation Masuhara Hidehiko (Tokyo Institute of Technology)
+        tr
+          th Bootstrapping UI Frameworks in Self-sustaining Systems
+          td.affiliation Robert Hirschfeld (Hasso Plattner Institute)
+        tr
+          th -
+          td.affiliation Yutaka Obuchi (Meiji University)
+        tr
+          th Siv3D: C++ Library for Interactive Applications
+          td.affiliation Ryo Suzuki (Waseda University)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 17:45
+            |  Discussion
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 18:30
+            |  Drinking Party
+
+block members
+  h4 Founders
+  ul
+    li
+      a#jk(href='https://junkato.jp') Jun Kato
+      | , 
+      abbr(title='National Institute of Advanced Industrial Science and Technology') AIST
+    li
+      a(href='http://prg.is.titech.ac.jp/people/masuhara') Hidehiko Masuhara
+      | , 
+      abbr(title='Tokyo Institute of Technology') Titech
