@@ -1,0 +1,102 @@
+extends ../layout
+
+block vars
+  - const title = '第8回勉強会';
+  - const path = '8';
+  - const call = fs.readFileSync('src/8/call.txt', 'utf8');
+
+block description
+  p SIGPXは、プログラミングのための環境と、その環境が提供する体験の設計に興味を持つ人で集まり、最新の研究動向や事例について情報交換する会です。このページでは第8回勉強会の開催内容を紹介しています.
+
+block body
+  section#overview
+    p(style="float: right; margin: 15px 10px;")
+      img(src="http://sigchi.jp/assets/images/SIGCHI_logo.png" width="240")
+    h2 概要
+    p ライブプログラミングの新技術や音楽、グラフィックデザインのためのプログラミング環境などの研究紹介がありました。
+    ul
+      li
+        strong 場所:
+        |  オンライン開催（詳細はSlackで告知）
+      li
+        strong 日時:
+        |  2021年3月19日（金）午前11時～午後3時30分
+      li
+        strong テーマ:
+        |  「プログラミング体験（PX）に関する研究紹介」
+      li
+        strong 共催:
+        |  
+        a(href="http://sigchi.jp/about.html") Japan ACM SIGCHI Chapter
+    h2
+      | プログラム 
+      span.gray (2022年3月14日 掲載)
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 11:00
+            |  Session #1
+        tr
+          th イントロダクション
+          td.affiliation 加藤・増原・三上 (産業技術総合研究所・東京工業大学・株式会社Preferred Networks)
+        tr
+          th Some PX-related papers published at CHI 2020
+          td.affiliation 加藤 淳 (産業技術総合研究所)
+        tr
+          th 与えられたコードの挙動に対応する図の自動選択
+          td.affiliation 伊藤 誓 (東京大学 五十嵐研究室)
+        tr
+          th HtDPに基づいたプログラミングのフィードバック生成
+          td.affiliation 能勢 純弥 (東京工業大学 増原研究室)
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 12:10
+            |  Session #2 自己紹介（Lightning Talk）
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 13:30
+            |  Session #3
+        tr
+          th 音と音楽のためのプログラミング言語のサーベイ
+          td.affiliation 松浦 知也 (九州大学大学院芸術工学府)
+        tr
+          th オーディオ/ MIDIデータフロー構築用のビジュアルプログラミング環境/トランスコンパイラの紹介
+          td.affiliation 青木 海 (sigboost株式会社)
+        tr
+          th Javaプログラミングの体験向上に関する活動
+          td.affiliation Kengo TODA (SpotBugs team)
+        tr
+          th Preliminary Case Study on Block Programming Language for Competitive Programming
+          td.affiliation 三上 裕明 (株式会社Preferred Networks)
+        tr
+          th Hardware Metaprogramming in Python
+          td.affiliation 高前田 伸也 (東京大学)
+        tr
+          th Lispでグラフィックをマシに描きたい
+          td.affiliation 橋本 麦 (INS Studio)
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 15:25
+            |  Session #4 タウンホール
+  section#cfp
+    h2
+      | Call for Participation 
+      span.gray (2021年3月4日 掲載)
+    pre!= call
+
+block members
+  h4 幹事団（順不同）
+  p
+    a#jk(href='https://junkato.jp/ja') 加藤 淳
+    | （産業技術総合研究所, アーチ株式会社）
+    a(href='https://hiroakimikami.github.io/ja/') 三上 裕明
+    | （株式会社Preferred Networks）
+    a(href='http://prg.is.titech.ac.jp/ja/people/masuhara/') 増原 英彦
+    | （東京工業大学）

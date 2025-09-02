@@ -1,0 +1,81 @@
+extends ../layout
+
+block vars
+  - const title = '第6回勉強会';
+  - const path = '6';
+  - const call = fs.readFileSync('src/6/call.txt', 'utf8');
+
+block description
+  p SIGPXは、プログラミングのための環境と、その環境が提供する体験の設計に興味を持つ人で集まり、最新の研究動向や事例について情報交換する会です。このページでは第6回勉強会の開催内容を紹介しています.
+
+block body
+  section#overview
+    p(style="float: right; margin: 15px 10px;")
+      img(src="http://sigchi.jp/assets/images/SIGCHI_logo.png" width="240")
+    h2 概要
+    ul
+      li
+        strong 場所:
+        |  
+        a(href="https://foundx.jp/about/") FoundX
+      li
+        strong 日時:
+        |  2019年3月2日（土）午前11時～午後1時
+      li
+        strong テーマ:
+        |  「国際的なプログラミング体験（PX）に関する研究コミュニティの紹介と交流」
+      li
+        strong 共催:
+        |  
+        a(href="http://sigchi.jp/about.html") Japan ACM SIGCHI Chapter
+    h2 プログラム
+    p
+      | 第6回は第147回 湘南会議「
+      a(href="https://shonan.nii.ac.jp/seminars/147/") Self-supporting, Extensible Programming Languages and Environments for Exploratory, Live Software Development
+      | 」にあわせて開催されました。日欧を中心に国際的な研究者が集まって研究内容を紹介しました。
+    table
+      tbody
+        tr.title
+          th(colspan="2")
+            b 11:00
+            |  Session #0
+        tr
+          th A Visual Environment for Reactive Robot Programming of Macro-level Behaviors
+          td.affiliation Floris Erich (University of Tsukuba)
+        tr
+          th
+            a(href="https://arxiv.org/ftp/arxiv/papers/1811/1811.05233.pdf") Massively Distributed SGD: ImageNet/ResNet-50 Training in a Flash
+          td.affiliation Hiroaki Mikami (Sony)
+        tr
+          th
+            a(href="https://research.miyashita.com/papers/D211").
+              数式の記述方法を選択できるプログラミングインタフェース
+              
+          td.affiliation Yuki Shimada (Meiji University)
+        tr
+          th
+            a(href="https://mariana.marasoiu.com/pdf/2016-EuroVis-short-Marasoiu-Blackwell-Sarkar-Spott.pdf") Clarifying hypotheses by sketching data
+          td.affiliation Mariana Marasoiu (The University of Cambridge)
+        tr
+          th
+            a(href="https://doi.org/10.1016/j.ijhcs.2019.06.009") Fifty years of the Psychology of Programming
+          td.affiliation Luke Church (The University of Cambridge)
+        tr
+          th Self Introduction
+          td.affiliation
+            | Isamu Hasegawa (Square Enix), Yoshiki Oshima (Y Combinator 
+            abbr(title="Human Advancement Research Group") HARC
+            | ), Jens Lincke, Fabio Niephaus (Hasso Plattner Institute)
+  section#cfp
+    h2
+      | Call for Participation 
+      span.gray (2019年2月21日 掲載)
+    pre!= call
+
+block members
+  h4 発起人（順不同）
+  p
+    a#jk(href='https://junkato.jp/ja') 加藤 淳
+    | （産業技術総合研究所, AIST）
+    a(href='http://prg.is.titech.ac.jp/ja/people/masuhara/') 増原 英彦
+    | （東京工業大学）

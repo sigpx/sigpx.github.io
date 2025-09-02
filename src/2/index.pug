@@ -1,0 +1,169 @@
+extends ../layout
+
+block vars
+  - const title = '第2回勉強会';
+  - const path = '2';
+  - const call = fs.readFileSync('src/2/call.txt', 'utf8');
+
+block description
+  p SIGPXは、プログラミングのための環境と、その環境が提供する体験の設計に興味を持つ人で集まり、最新の研究動向や事例について情報交換する会です。このページでは第2回勉強会の開催内容を紹介しています。
+
+block body
+  section#overview
+    h2 概要
+    p
+      a(href='/1') 前回
+      | 同様、プログラミング言語やプログラミングを支援するツール、統合開発環境などを研究開発している研究者・エンジニアの方々を中心に集まり、自己紹介を兼ねて事例紹介を行いました。また、国際会議などの動向に関する報告セッションも設けました。
+    p
+      | 参加者だけでなくSIGPXに興味のある方々が継続的に議論でき、情報共有できるプラットフォームとして
+      a(href='https://sigpx.slack.com') Slack
+      | の運用を始めました。Slackに参加するには、
+      a(href='https://join.slack.com/t/sigpx/shared_invite/enQtMzY5MzU0NjExNDU4LTZkN2U3Yjc2M2I3ZDAzMzUyN2E2NThlNDE0ZGZjMDkyNGUwNzVhMzBmMDY5YTNkMTY0YWQyN2JkMjBkMzYwNTU') Webフォーム
+      | にメールアドレスを記入して招待メールを受け取ってください。フォームが使えない場合は
+      a#apply-mail(href) メール
+      | でご連絡ください。
+    ul
+      li
+        strong 場所:
+        a(href='https://www.microsoft.com/ja-jp/mscorp/branch/sgt.aspx') 日本マイクロソフト株式会社
+        |  品川本社 31F セミナールームC+D（遠隔参加も可能）
+      li
+        strong 日時:
+        |  2016年8月7日（日）午前10時半～午後6時
+      li
+        strong テーマ:
+        |  「SIGPXに関する国内外の状況・情報の共有と整理」および「参加者各自の自己紹介を兼ねたSIGPX事例紹介」
+      li
+        a(href='https://sigpx.slack.com/messages/sigpx2/') Slackチャンネル #sigpx2
+    h2
+      | プログラム
+      span.gray (2016年12月24日 掲載)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 10:50
+            |  Session #0
+        tr
+          th SIGPXの概要
+          td.affiliation 加藤・増原 (産業技術総合研究所・東京工業大学)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 11:00
+            |  Session #1 国際動向の紹介
+        tr
+          th
+            a(href='http://2016.icse.cs.txstate.edu/') ICSE2016
+            |  勉強会で気になった論文紹介
+          td.affiliation 加藤 龍 (DeNA)
+        tr
+          th
+            a(href='http://chi2016.acm.org') CHI2016
+            |  関連論文の紹介
+          td.affiliation 原 健太・薄羽 大樹・鳥山 らいか (明治大学)
+        tr
+          th Microsoftの紹介
+          td.affiliation (Microsoft/スポンサー枠)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 11:50
+            |  お昼ごはん
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 13:00
+            |  Session #2
+        tr
+          th 言語指向プログラミングとドメイン専用言語
+          td.affiliation 市川 和央 (東京大学大学院 情報理工学系研究科)
+        tr
+          th コンパイラの難解な警告メッセージを教育支援したい
+          td.affiliation 権藤 克彦 (東京工業大学 情報理工学院)
+        tr
+          th
+            a(href='http://www.cs.cmu.edu/~NatProg/programminglanguageusability/') CHI
+            abbr(title='Usability of Programming Languages') UPL
+            |  Workshop
+            | /
+            a(href='http://2016.ecoop.org/track/LIVE-2016') ECOOP
+            abbr(title='Live Programming Systems') LIVE
+            |  Workshop 報告
+          td.affiliation 加藤 淳 (産業技術総合研究所)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 14:00
+            |  自己紹介・休憩
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 15:20
+            |  Session #3
+        tr
+          th Qiitaとコンテンツオーサリング
+          td.affiliation 竹馬 光太郎 (Increments, Inc)
+        tr
+          th Rainfall problem に思うこと
+          td.affiliation 千葉 滋 (東京大学大学院 情報理工学系研究科)
+        tr
+          th
+            a(href='https://sites.google.com/site/qurihara/home/srtjs') 映像コンテンツへの拡張プログラム埋め込みパラダイム再考
+          td.affiliation 栗原 一貴 (津田塾大学)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 16:10
+            |  休憩
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 16:50
+            |  Session #4
+        tr
+          th
+            a(href='http://programming-experience.org/px16/')
+              abbr(title='Programming Experience') PX
+              | /16
+            |  報告といくつかの宣伝
+          td.affiliation 増原 英彦 (東京工業大学)
+        tr
+          th Bootstrapping UI Frameworks in Self-sustaining Systems
+          td.affiliation Robert Hirschfeld (Hasso Plattner Institute)
+        tr
+          th -
+          td.affiliation 小渕 豊 (明治大学)
+        tr
+          th インタラクションのための C++ ライブラリ「Siv3D」
+          td.affiliation 鈴木 遼 (早稲田大学)
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 17:45
+            |  全体議論
+    table
+      tbody
+        tr.title
+          th(colspan='2')
+            b 18:30
+            |  懇親会
+  section#cfp
+    h2 Call for Participation
+    pre!= call
+
+block members
+  h4 発起人（順不同）
+  p
+    a#jk(href='https://junkato.jp/ja') 加藤 淳
+    | （産業技術総合研究所, AIST）
+    a(href='http://prg.is.titech.ac.jp/ja/people/masuhara/') 増原 英彦
+    | （東京工業大学）
